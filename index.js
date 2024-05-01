@@ -16,8 +16,9 @@ const depositMoney = () => {
     if(isNaN(depositAmount) || depositAmount <= 0) {
         return depositMoney()
     }
-    return console.log(`$${depositAmount}`)
+    return depositAmount
 }
+
 
 const linesBet = () => {
     console.log("\n")
@@ -69,5 +70,27 @@ const linesBet = () => {
 }
 
 
-// depositMoney()
-linesBet()
+const betAmount = (availableMoney) => {
+    console.log(`You have $${availableMoney}`)
+    let amount = prompt("How much do you want to bet? ")
+
+    while(isNaN(amount) || (amount > availableMoney || amount <= 0)) {
+        console.log(`You have $${availableMoney}`)
+        const temp = prompt("How much do you want to bet? ")
+        amount = temp
+    }
+    console.log(`\nYou bet $${amount} out of your $${availableMoney}\n`)
+    return amount
+}
+
+//Simple way to see the depositMoney updating, can be turned into 
+// a while loop later for repeated betting done by user if they have the funds.
+let availableMoney = depositMoney()
+amount = betAmount(availableMoney)
+availableMoney = availableMoney - amount
+betAmount(availableMoney)
+availableMoney = availableMoney - amount
+console.log(`You have $${availableMoney} remaining in your wallet.`)
+
+
+// linesBet()
