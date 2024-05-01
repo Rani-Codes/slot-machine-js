@@ -1,0 +1,16 @@
+{
+  "name": "slot-machine",
+  "version": "1.0.0",
+  "description": "Created a javascript application to learn best practices of the language. Created two branches. The first branch titled my_version is my version of creating this application without any guide. The main branch will be the main tutorial's version with me comparing the two at the end to see how I can improve my own code in the future.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
