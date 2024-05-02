@@ -1,4 +1,4 @@
-var prompt = require('prompt-sync')();
+// var prompt = require('prompt-sync')();
 
 /* Different tasks needed to create the slot machine app
 1. Deposit Money
@@ -105,10 +105,18 @@ const betAmount = (availableMoney) => {
 */
 
 // Define symbols
-const symbols = ['Cherry', 'Lemon', 'Orange', 'Apple', 'Grapes', 'Banana'];
+const symbols = ['Cherry', 'Lemon', 'Orange', 'Apple', 'Grapes', 'Banana']
 
 // Function to generate random symbol
 const getRandomSymbol = () => {
-    return console.log(symbols[Math.floor(Math.random() * symbols.length)]);
+    return symbols[Math.floor(Math.random() * symbols.length)]
 }
-getRandomSymbol()
+
+
+// Define the spinReels function in global scope
+function spinReels() {
+    const reels = document.querySelectorAll('.reel');
+    reels.forEach(reel => {
+        reel.textContent = getRandomSymbol();
+    });
+}

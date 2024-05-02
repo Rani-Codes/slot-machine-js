@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slots!</title>
-    <link rel="stylesheet" href="output.css">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-    <h1 class="bg-black text-blue-500 flex justify-center text-6xl">Slots Machine</h1>
+<body class="bg-[#f3d2c1]">
+    <h1 class=" text-[#001858] flex justify-center text-6xl mt-4">Slots Machine</h1>
+        <!-- Slot reels -->
+        <div class="row1 flex p-4 justify-around">
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 1</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 2</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 3</div>
+        </div>
+
+        <div class="row2 flex p-4 justify-around">
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 1</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 2</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 3</div>
+        </div>
+
+        <div class="row3 flex p-4 justify-around">
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 1</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 2</div>
+            <div class="reel  p-8 rounded-2xl  text-[#001858] bg-[#fef6e4] text-xl font-semibold w-32">Sym 3</div>
+        </div>
     
+        <!-- Spin button -->
+        <div class="flex justify-center items-center">
+            <button onclick="spinReels()" class="mt-5 p-5 border-4 rounded-full border-[#f582ae] text-[#001858] text-4xl font-bold font-mono">Spin</button>
+        </div>
+
+        <script src="./index.js" defer></script>
 </body>
 </html>
