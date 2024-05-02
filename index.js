@@ -97,13 +97,13 @@ const betAmount = (availableMoney) => {
 
 // linesBet()
 
+
 /* The following needs to happen to spin the slot machine:
 1. Create symbols
 2. Start the machine
 3. Create an animation for the spinning
 4. Stop the machine and animation
 */
-
 // Define symbols
 const symbols = ['Cherry', 'Lemon', 'Orange', 'Apple', 'Grapes', 'Banana']
 
@@ -121,5 +121,36 @@ function spinReels() {
     });
 }
 
+
+// Function to spin the reels
+function spinReels() {
+    const reels = document.querySelectorAll('.reel');
+    reels.forEach(reel => {
+        reel.classList.add('animate-spin'); // Add the spinning animation class
+        reel.textContent = getRandomSymbol();
+    });
+}
+
+// Event listener for spin button
 const spinButton = document.querySelector('button');
-spinButton.addEventListener('click', spinReels);
+spinButton.addEventListener('click', () => {
+    spinReels();
+
+    // Set a timeout to stop the spinning animation after a certain duration
+    setTimeout(() => {
+        stopSpinAnimation(); // Call function to stop spinning animation
+        checkForWins();
+    }, 1000); // Adjust duration as needed
+});
+
+// Function to stop the spinning animation
+function stopSpinAnimation() {
+    const reels = document.querySelectorAll('.reel');
+    reels.forEach(reel => {
+        reel.classList.remove('animate-spin'); // Remove the spinning animation class
+    });
+}
+
+const checkForWins = () => {
+    const row1 = document.querySelectorAll('.R1')
+}
