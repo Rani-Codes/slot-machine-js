@@ -85,12 +85,30 @@ const betAmount = (availableMoney) => {
 
 //Simple way to see the depositMoney updating, can be turned into 
 // a while loop later for repeated betting done by user if they have the funds.
-let availableMoney = depositMoney()
-amount = betAmount(availableMoney)
-availableMoney = availableMoney - amount
-betAmount(availableMoney)
-availableMoney = availableMoney - amount
-console.log(`You have $${availableMoney} remaining in your wallet.`)
+
+
+// let availableMoney = depositMoney()
+// amount = betAmount(availableMoney)
+// availableMoney = availableMoney - amount
+// betAmount(availableMoney)
+// availableMoney = availableMoney - amount
+// console.log(`You have $${availableMoney} remaining in your wallet.`)
 
 
 // linesBet()
+
+/* The following needs to happen to spin the slot machine:
+1. Create symbols
+2. Start the machine
+3. Create an animation for the spinning
+4. Stop the machine and animation
+*/
+
+// Define symbols
+const symbols = ['Cherry', 'Lemon', 'Orange', 'Apple', 'Grapes', 'Banana'];
+
+// Function to generate random symbol
+const getRandomSymbol = () => {
+    return console.log(symbols[Math.floor(Math.random() * symbols.length)]);
+}
+getRandomSymbol()
