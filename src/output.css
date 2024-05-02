@@ -554,6 +554,11 @@ video {
   --tw-contain-style:  ;
 }
 
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -657,6 +662,11 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -664,21 +674,6 @@ video {
 
 .text-6xl {
   font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
   line-height: 1;
 }
 
@@ -693,14 +688,4 @@ video {
 .text-\[\#001858\] {
   --tw-text-opacity: 1;
   color: rgb(0 24 88 / var(--tw-text-opacity));
-}
-
-.text-\[\#8bd3dd\] {
-  --tw-text-opacity: 1;
-  color: rgb(139 211 221 / var(--tw-text-opacity));
-}
-
-.text-\[\#f582ae\] {
-  --tw-text-opacity: 1;
-  color: rgb(245 130 174 / var(--tw-text-opacity));
 }

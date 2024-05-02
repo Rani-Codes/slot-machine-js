@@ -1,7 +1,3 @@
 # slot-machine-js
 
-Created a javascript application to learn best practices of the language. Created two branches. The first branch titled my_version is my version of creating this application without any guide. The main branch will be the main tutorial's version with me comparing the two at the end to see how I can improve my own code in the future.
-
-The tutorial I referenced is:
-
-https://www.youtube.com/watch?v=E3XxeE7NF30
+Created a javascript application to get more comfortable around DOM elements in js. Started off at first by doing a fully server-side game of slots but wanted to incorporate visuals which is why I ended up pivoting halfway through. This game doesn't have a coin system or a bet system because I found those to take away from topics of the project that I wanted to focus on. Overall I am happy with how this turned out.
