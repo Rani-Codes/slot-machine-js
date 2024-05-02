@@ -554,32 +554,37 @@ video {
   --tw-contain-style:  ;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
+.mb-12 {
+  margin-bottom: 3rem;
 }
 
 .flex {
   display: flex;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-32 {
+  width: 8rem;
 }
 
 .w-40 {
   width: 10rem;
 }
 
-.w-32 {
-  width: 8rem;
-}
-
 .w-36 {
   width: 9rem;
+}
+
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .items-center {
@@ -594,24 +599,48 @@ video {
   justify-content: space-around;
 }
 
-.rounded-full {
-  border-radius: 9999px;
-}
-
-.rounded-lg {
-  border-radius: 0.5rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-2xl {
   border-radius: 1rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .border-4 {
   border-width: 4px;
+}
+
+.border-8 {
+  border-width: 8px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-\[\#fef6e4\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 246 228 / var(--tw-border-opacity));
+}
+
+.border-\[\#001858\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 24 88 / var(--tw-border-opacity));
+}
+
+.border-\[\#8bd3dd\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(139 211 221 / var(--tw-border-opacity));
+}
+
+.border-\[\#\#f582ae\] {
+  border-color: ##f582ae;
 }
 
 .border-\[\#f582ae\] {
@@ -619,18 +648,19 @@ video {
   border-color: rgb(245 130 174 / var(--tw-border-opacity));
 }
 
-.bg-\[\#fef6e4\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 246 228 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#\#f3d2c1\] {
-  background-color: ##f3d2c1;
-}
-
 .bg-\[\#f3d2c1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(243 210 193 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f582ae\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 130 174 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fef6e4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 246 228 / var(--tw-bg-opacity));
 }
 
 .p-4 {
@@ -641,16 +671,24 @@ video {
   padding: 1.25rem;
 }
 
-.p-6 {
-  padding: 1.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
 .p-8 {
   padding: 2rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
+.pb-12 {
+  padding-bottom: 3rem;
 }
 
 .font-mono {
@@ -670,6 +708,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold {

@@ -120,3 +120,6 @@ function spinReels() {
         reel.textContent = getRandomSymbol();
     });
 }
+
+const spinButton = document.querySelector('button');
+spinButton.addEventListener('click', spinReels);
